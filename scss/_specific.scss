@@ -1,0 +1,103 @@
+/* Specifics */
+
+/* Intro */
+.container {
+  width: 58rem;
+  height: 13rem;
+  margin: auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  &__logo {
+    font-size: 3rem;
+    color: var(--white);
+  }
+  &__theme {
+    color: var(--white);
+    justify-self: flex-end;
+  }
+  &__form {
+    background-color: var(--dark-blue3);
+    display: grid;
+    width: 10rem;
+    grid-template-areas:
+      "header__theme-1 header__theme-2 header__theme-3"
+      "header__checkbox-1 header__checkbox-2 header__checkbox-3";
+  }
+  &__theme-1 {
+    grid-area: header__theme-1;
+  }
+  &__theme-2 {
+    grid-area: header__theme-2;
+  }
+  &__theme-3 {
+    grid-area: header__theme-3;
+  }
+  &__checbox-1 {
+    grid-area: header__checkbox-1;
+  }
+  &__checbox-2 {
+    grid-area: header__checkbox-2;
+  }
+  &__checbox-3 {
+    grid-area: header__checkbox-3;
+  }
+}
+
+.display {
+  border-radius: 2rem;
+  margin: 3rem 0;
+  background-color: var(--dark-blue3);
+  &__numbers {
+    text-align: right;
+    padding: 3rem 2rem;
+    font-size: 3rem;
+    color: var(--white);
+  }
+}
+
+.keyboard {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--dark-blue2);
+  padding: 2rem;
+  border-radius: 2rem;
+  &_key-reset {
+    grid-column: 1/3;
+  }
+  &_key-equal {
+    grid-column: 3/-1;
+  }
+  &__key-button {
+    width: 100%;
+    padding: 2rem 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 3rem;
+    background-color: var(--orange-gray1);
+    color: var(--dark-blue-key);
+    -webkit-box-shadow: 0px 5px 0px 0px #b4a497;
+    box-shadow: 0px 5px 0px 0px #b4a497;
+    cursor: pointer;
+  }
+  &__key-button:active {
+    -webkit-box-shadow: 0px 0px 0px 0px #b4a497;
+    box-shadow: 0px 0px 0px 0px #b4a497;
+    transform: translateY(4px);
+  }
+  &__key-button-red {
+    background-color: var(--red-gray);
+    color: var(--white);
+    -webkit-box-shadow: 0px 5px 0px 0px #96271c;
+    box-shadow: 0px 5px 0px 0px #96271c;
+  }
+  &__key-button-blue {
+    background-color: var(--dark-blue-key);
+    color: var(--white);
+    -webkit-box-shadow: 0px 5px 0px 0px var(--dark-blue-key-shadow);
+    box-shadow: 0px 5px 0px 0px var(--dark-blue-key-shadow);
+  }
+}

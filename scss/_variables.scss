@@ -1,0 +1,31 @@
+/* Variables */
+:root {
+  /* Reset 1rem = 10px */
+  font-size: 10px;
+
+  /* Basic colors */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Project colors */
+  --dark-blue1: hsl(222, 26%, 31%);
+  --dark-blue2: hsl(223, 31%, 20%);
+  --dark-blue3: hsl(224, 36%, 15%);
+
+  /*Keys*/
+  --dark-blue-key: hsl(225, 21%, 49%);
+  --dark-blue-key-shadow: hsl(224, 28%, 35%);
+  --red-gray: hsl(6, 63%, 50%);
+  --orange-gray: hsl(28, 16%, 65%);
+  --orange-gray1: #eae3db;
+
+  /*Text*/
+  --very-dark-gray: hsl(221, 14%, 31%);
+
+  /* Layout variables */
+  --content-width: 90rem;
+  --content-padding: 5rem;
+
+  --header-height: 10rem;
+  --keyvisual-height: 60rem;
+}

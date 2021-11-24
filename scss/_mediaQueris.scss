@@ -12,6 +12,13 @@
     width: 100%;
     min-width: 32rem;
   }
+
+  .header__theme {
+    color: var(--white);
+    justify-content: flex-end;
+    padding-left: 18rem;
+  }
+
   .keyboard {
     display: grid;
     grid-gap: 2rem;

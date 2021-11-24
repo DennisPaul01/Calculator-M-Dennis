@@ -147,7 +147,7 @@ button {
   --keyvisual-height: 60rem; }
 
 /* Specifics */
-/* Intro */
+/* Container ----------------------------------------------------------------*/
 .container {
   width: 58rem;
   height: 13rem;
@@ -162,12 +162,28 @@ button {
     color: var(--white); }
   .header__theme {
     color: var(--white);
-    justify-self: flex-end; }
+    justify-content: flex-end;
+    padding-left: 20rem; }
   .header__form {
-    background-color: var(--dark-blue3);
     display: grid;
     width: 10rem;
-    grid-template-areas: "header__theme-1 header__theme-2 header__theme-3" "header__checkbox-1 header__checkbox-2 header__checkbox-3"; }
+    justify-content: space-around;
+    color: var(--white);
+    font-size: 1.5rem;
+    grid-template-areas: "header__options-theme " "header__options "; }
+  .header__options-theme {
+    display: flex;
+    justify-content: space-between;
+    grid-area: header__options-theme;
+    padding: 0 1rem; }
+  .header__options {
+    background-color: var(--dark-blue3);
+    grid-area: header__options;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 100px; }
   .header__theme-1 {
     grid-area: header__theme-1; }
   .header__theme-2 {
@@ -228,6 +244,84 @@ button {
     -webkit-box-shadow: 0px 5px 0px 0px var(--dark-blue-key-shadow);
     box-shadow: 0px 5px 0px 0px var(--dark-blue-key-shadow); }
 
+.header {
+  position: relative; }
+  .header__checkbox-1 {
+    cursor: pointer;
+    background-color: transparent;
+    visibility: hidden;
+    z-index: 100; }
+  .header__checkbox-1:after {
+    visibility: visible;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 3rem;
+    right: 7.6rem;
+    background-color: transparent;
+    border-radius: 100px;
+    content: "";
+    position: absolute; }
+  .header__checkbox-x1 {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100px;
+    background-color: #182034;
+    position: absolute;
+    top: 3rem;
+    right: 7.6rem; }
+  .header__checkbox-1:checked ~ .header__checkbox-x1 {
+    background-color: var(--red-gray); }
+  .header__checkbox-2 {
+    cursor: pointer;
+    background-color: transparent;
+    visibility: hidden;
+    z-index: 100; }
+  .header__checkbox-2:after {
+    visibility: visible;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 3rem;
+    right: 4.5rem;
+    background-color: transparent;
+    border-radius: 100px;
+    content: "";
+    position: absolute; }
+  .header__checkbox-x2 {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100px;
+    background-color: transparent;
+    position: absolute;
+    top: 3rem;
+    right: 4.5rem; }
+  .header__checkbox-2:checked ~ .header__checkbox-x2 {
+    background-color: var(--red-gray); }
+  .header__checkbox-3 {
+    cursor: pointer;
+    background-color: transparent;
+    visibility: hidden;
+    z-index: 100; }
+  .header__checkbox-3:after {
+    visibility: visible;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 3rem;
+    right: 1rem;
+    background-color: transparent;
+    border-radius: 100px;
+    content: "";
+    position: absolute; }
+  .header__checkbox-x3 {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100px;
+    background-color: transparent;
+    position: absolute;
+    top: 3rem;
+    right: 1rem; }
+  .header__checkbox-3:checked ~ .header__checkbox-x3 {
+    background-color: var(--red-gray); }
+
 /* Hovers */
 @media (hover: hover) {
   header nav ul li a:hover {
@@ -246,6 +340,10 @@ button {
   .container {
     width: 100%;
     min-width: 32rem; }
+  .header__theme {
+    color: var(--white);
+    justify-content: flex-end;
+    padding-left: 18rem; }
   .keyboard {
     display: grid;
     grid-gap: 2rem;

@@ -17,12 +17,34 @@
           <p class="header__logo">Calc</p>
           <p class="header__theme">Theme</p>
           <form action="" class="header__form">
-            <label for="theme-1" class="header__theme-1">1</label>
-            <input type="checkbox" name="theme-1" class="header__checkbox-1" />
-            <label for="theme-2" class="header__theme-2">2</label>
-            <input type="checkbox" name="theme-2" class="header__checkbox-2" />
-            <label for="theme-3" class="header__theme-3">3</label>
-            <input type="checkbox" name="theme-3" class="header__checkbox-3" />
+            <div class="header__options-theme">
+              <label for="theme-1" class="header__theme-1">1</label>
+              <label for="theme-2" class="header__theme-2">2</label>
+              <label for="theme-3" class="header__theme-3">3</label>
+            </div>
+            <div class="header__options">
+              <input
+                type="radio"
+                name="theme"
+                value="theme-1"
+                class="header__checkbox-1"
+                checked
+              /><span class="header__checkbox-x1"></span>
+              <input
+                type="radio"
+                name="theme"
+                value="theme-2"
+                class="header__checkbox-2"
+              />
+              <span class="header__checkbox-x2"></span>
+              <input
+                type="radio"
+                name="theme"
+                value="theme-3"
+                class="header__checkbox-3"
+              />
+              <span class="header__checkbox-x3"></span>
+            </div>
           </form>
         </header>
         <div class="display">

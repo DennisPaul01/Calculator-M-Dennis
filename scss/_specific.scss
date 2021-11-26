@@ -17,11 +17,13 @@
     font-size: 3rem;
     color: var(--white);
   }
+
   &__theme {
     color: var(--white);
     justify-content: flex-end;
     padding-left: 20rem;
   }
+
   &__form {
     display: grid;
     width: 10rem;
@@ -32,6 +34,7 @@
       "header__options-theme "
       "header__options ";
   }
+
   &__options-theme {
     display: flex;
     justify-content: space-between;
@@ -47,6 +50,7 @@
     width: 10rem;
     border-radius: 100px;
   }
+
   &__theme-1 {
     grid-area: header__theme-1;
   }
@@ -73,11 +77,11 @@
   border-radius: 2rem;
   margin: 3rem 0;
   background-color: var(--dark-blue3);
+  color: var(--white);
   &__numbers {
     text-align: right;
     padding: 3rem 2rem;
     font-size: 3rem;
-    color: var(--white);
   }
 }
 

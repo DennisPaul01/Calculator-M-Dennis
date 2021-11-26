@@ -95,6 +95,9 @@ body {
   line-height: 1.4;
   background-color: var(--dark-blue1); }
 
+.theme-2 {
+  background-color: var(--light-grey); }
+
 section {
   padding: var(--content-padding); }
 
@@ -140,6 +143,22 @@ button {
   --orange-gray1: #eae3db;
   /*Text*/
   --very-dark-gray: hsl(221, 14%, 31%);
+  --light-grey: hsl(0, 0%, 90%);
+  --grey-red: hsl(0, 5%, 81%);
+  --very-light-gray: hsl(0, 0%, 93%);
+  --dark-moderate-cyan: hsl(185, 42%, 37%);
+  --dark-light-cyan: hsl(185, 58%, 25%);
+  --orange: hsl(25, 98%, 40%);
+  --dark-orange: hsl(25, 99%, 27%);
+  --very-dark-violet: hsl(268, 75%, 9%);
+  --soft-violet: hsl(268, 71%, 12%);
+  --dark-violet: hsl(281, 89%, 26%);
+  --vivid-magenta: hsl(285, 91%, 52%);
+  --pure-cyan: hsl(176, 100%, 44%);
+  --soft-cyan: hsl(177, 92%, 70%);
+  --violet-dark: hsl(268, 47%, 21%);
+  --dark-magenta: hsl(290, 70%, 36%);
+  --yellow: hsl(52, 100%, 62%);
   /* Layout variables */
   --content-width: 90rem;
   --content-padding: 5rem;
@@ -200,12 +219,12 @@ button {
 .display {
   border-radius: 2rem;
   margin: 3rem 0;
-  background-color: var(--dark-blue3); }
+  background-color: var(--dark-blue3);
+  color: var(--white); }
   .display__numbers {
     text-align: right;
     padding: 3rem 2rem;
-    font-size: 3rem;
-    color: var(--white); }
+    font-size: 3rem; }
 
 .keyboard {
   display: grid;
@@ -265,7 +284,6 @@ button {
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 100px;
-    background-color: #182034;
     position: absolute;
     top: 3rem;
     right: 7.6rem; }
@@ -321,14 +339,6 @@ button {
     right: 1rem; }
   .header__checkbox-3:checked ~ .header__checkbox-x3 {
     background-color: var(--red-gray); }
-
-/* Hovers */
-@media (hover: hover) {
-  header nav ul li a:hover {
-    background-color: var(--yellow); }
-  section p a.button:hover {
-    background-color: var(--yellow);
-    color: var(--black); } }
 
 /* Media Queries */
 /* Standard desktop  */
